@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="post-to-get">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1434552069641</CreatedAt>
+    <CreatedBy>clatimer@apigee.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>post-to-get</DisplayName>
+    <LastModifiedAt>1434553574309</LastModifiedAt>
+    <LastModifiedBy>clatimer@apigee.com</LastModifiedBy>
+    <Policies>
+        <Policy>Change-Verb-to-Get</Policy>
+        <Policy>Reject-Invalid-Verb</Policy>
+        <Policy>body-to-query-params</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>node://server.js</Resource>
+        <Resource>jsc://add-query-params.js</Resource>
+    </Resources>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+    <validate>false</validate>
+</APIProxy>

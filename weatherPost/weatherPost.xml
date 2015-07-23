@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="3" name="weatherPost">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1434651712150</CreatedAt>
+    <CreatedBy>ravi_tanniru@abercrombie.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>weatherPost</DisplayName>
+    <LastModifiedAt>1434651712150</LastModifiedAt>
+    <LastModifiedBy>ravi_tanniru@abercrombie.com</LastModifiedBy>
+    <Policies>
+        <Policy>Assign-Message-1</Policy>
+        <Policy>JavaScript-1</Policy>
+        <Policy>OAuth-v20-1</Policy>
+        <Policy>reWriteTargetURL</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://JavaScript-1.js</Resource>
+        <Resource>jsc://reWriteTargetURL.js</Resource>
+    </Resources>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

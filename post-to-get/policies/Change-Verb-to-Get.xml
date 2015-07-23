@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="Change-Verb-to-Get">
+    <DisplayName>Change Verb to Get</DisplayName>
+    <Set>
+        <Verb>GET</Verb>
+        <Payload></Payload>
+    </Set>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

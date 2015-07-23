@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<JavaCallout async="false" continueOnError="false" enabled="true" name="Generate-Signature">
+    <DisplayName>Generate Signature</DisplayName>
+    <Properties/>
+    <ClassName>com.fivehundredfriends.api.FFLoyaltyCallout</ClassName>
+    <ResourceURL>java://apigee-ff-loyalty-1.0-SNAPSHOT.jar</ResourceURL>
+</JavaCallout>

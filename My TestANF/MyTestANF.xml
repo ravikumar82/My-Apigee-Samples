@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="MyTestANF">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1435194546058</CreatedAt>
+    <CreatedBy>ravi_tanniru@abercrombie.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>MyTestANF</DisplayName>
+    <LastModifiedAt>1435194546058</LastModifiedAt>
+    <LastModifiedBy>ravi_tanniru@abercrombie.com</LastModifiedBy>
+    <Policies/>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

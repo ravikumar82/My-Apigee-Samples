@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <Description/>
+    <PreFlow name="PreFlow">
+        <Request/>
+        <Response/>
+    </PreFlow>
+    <Flows>
+        <Flow name="storecheckin">
+            <Description/>
+            <Request>
+                <Step>
+                    <Name>add-query-params</Name>
+                </Step>
+                <Step>
+                    <Name>Get-FF-Config</Name>
+                </Step>
+                <Step>
+                    <Name>Add-UUID-Param</Name>
+                </Step>
+                <Step>
+                    <Name>Generate-Signature</Name>
+                </Step>
+                <Step>
+                    <Name>Add-Signature-Param</Name>
+                </Step>
+                <Step>
+                    <Name>Change-Verb-to-Get</Name>
+                </Step>
+            </Request>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/storecheckin") and (request.verb = "POST")</Condition>
+        </Flow>
+        <Flow name="InvalidVerb">
+            <Description/>
+            <Request>
+                <Step>
+                    <Name>RaiseFault</Name>
+                </Step>
+            </Request>
+            <Response/>
+            <Condition>request.verb != "POST"</Condition>
+        </Flow>
+    </Flows>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <HTTPProxyConnection>
+        <BasePath>/loyalty</BasePath>
+        <VirtualHost>default</VirtualHost>
+        <VirtualHost>secure</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="default">
+        <TargetEndpoint>default</TargetEndpoint>
+    </RouteRule>
+</ProxyEndpoint>

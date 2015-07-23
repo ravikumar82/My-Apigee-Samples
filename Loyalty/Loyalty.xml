@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="2" name="Loyalty">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1434680603913</CreatedAt>
+    <CreatedBy>ravi_tanniru@abercrombie.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>Loyalty</DisplayName>
+    <LastModifiedAt>1434681141239</LastModifiedAt>
+    <LastModifiedBy>ravi_tanniru@abercrombie.com</LastModifiedBy>
+    <Policies>
+        <Policy>Add-Signature-Param</Policy>
+        <Policy>Add-UUID-Param</Policy>
+        <Policy>Change-Verb-to-Get</Policy>
+        <Policy>Generate-Signature</Policy>
+        <Policy>Get-FF-Config</Policy>
+        <Policy>OAuth-v20-1</Policy>
+        <Policy>RaiseFault</Policy>
+        <Policy>add-query-params</Policy>
+        <Policy>createEventID</Policy>
+        <Policy>setOutboundVar</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>node://server.js</Resource>
+        <Resource>jsc://add-query-params.js</Resource>
+        <Resource>jsc://createEventID.js</Resource>
+        <Resource>jsc://setOutboundVariable.js</Resource>
+        <Resource>java://apigee-ff-loyalty-1.0-SNAPSHOT.jar</Resource>
+    </Resources>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+    <validate>false</validate>
+</APIProxy>

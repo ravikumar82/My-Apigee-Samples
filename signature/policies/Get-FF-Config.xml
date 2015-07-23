@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KeyValueMapOperations async="false" continueOnError="false" enabled="true" mapIdentifier="ffconfig" name="Get-FF-Config">
+    <DisplayName>Get FF Config</DisplayName>
+    <Properties/>
+    <Get assignTo="uuid" index="1">
+        <Key>
+            <Parameter>uuid</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="accountKey" index="1">
+        <Key>
+            <Parameter>accountKey</Parameter>
+        </Key>
+    </Get>
+    <Scope>environment</Scope>
+</KeyValueMapOperations>

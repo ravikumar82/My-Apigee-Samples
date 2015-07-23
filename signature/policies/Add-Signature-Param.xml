@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="Add-Signature-Param">
+    <DisplayName>Add Signature Param</DisplayName>
+    <Properties/>
+    <Set>
+        <QueryParams>
+          <QueryParam name="sig">{signature}</QueryParam>
+      </QueryParams>
+       
+    </Set>
+    
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</AssignMessage>

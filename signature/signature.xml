@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="2" name="signature">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1433784855379</CreatedAt>
+    <CreatedBy>clatimer@apigee.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>signature</DisplayName>
+    <LastModifiedAt>1433972889804</LastModifiedAt>
+    <LastModifiedBy>clatimer@apigee.com</LastModifiedBy>
+    <Policies>
+        <Policy>Add-Signature-Param</Policy>
+        <Policy>Add-UUID-Param</Policy>
+        <Policy>Generate-Signature</Policy>
+        <Policy>Get-FF-Config</Policy>
+        <Policy>OAuth-v20-1</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>node://server.js</Resource>
+        <Resource>java://apigee-ff-loyalty-1.0-SNAPSHOT.jar</Resource>
+    </Resources>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+    <validate>false</validate>
+</APIProxy>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="xmltojson">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1434477532571</CreatedAt>
+    <CreatedBy>Ravi_Tanniru@abercrombie.com</CreatedBy>
+    <DisplayName>xmltojson</DisplayName>
+    <LastModifiedAt>1434477532571</LastModifiedAt>
+    <LastModifiedBy>Ravi_Tanniru@abercrombie.com</LastModifiedBy>
+    <Policies>
+        <Policy>jsontoxml</Policy>
+        <Policy>xmltojson</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

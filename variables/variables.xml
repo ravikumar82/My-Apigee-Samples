@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="variables">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1434477251209</CreatedAt>
+    <CreatedBy>Ravi_Tanniru@abercrombie.com</CreatedBy>
+    <DisplayName>variables</DisplayName>
+    <LastModifiedAt>1434477251209</LastModifiedAt>
+    <LastModifiedBy>Ravi_Tanniru@abercrombie.com</LastModifiedBy>
+    <Policies>
+        <Policy>parseforecast</Policy>
+        <Policy>parsejsonforecast</Policy>
+        <Policy>variables</Policy>
+        <Policy>xmltojson</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://minimize.js</Resource>
+    </Resources>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>
